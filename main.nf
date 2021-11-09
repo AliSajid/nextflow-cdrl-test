@@ -9,10 +9,10 @@ nextflow.preview.dsl=2
 /* 
  * pipeline input parameters 
  */
-params.reads = "/opt/rnaseq/data/ggal/gut_{1,2}.fq"
-params.transcript = "/opt/rnaseq/data/ggal/transcriptome.fa"
-params.multiqc = "/opt/rnaseq/multiqc"
-params.outdir = "/opt/rnaseq/results"
+params.reads = "$basedir/data/ggal/gut_{1,2}.fq"
+params.transcript = "$basedir/data/ggal/transcriptome.fa"
+params.multiqc = "$basedir/multiqc"
+params.outdir = "$basedir/results"
 
 log.info """\
          R N A S E Q - N F   P I P E L I N E    
